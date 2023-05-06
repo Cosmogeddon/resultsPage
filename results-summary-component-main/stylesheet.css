@@ -1,0 +1,184 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    width: 100%;
+    font-size: 18px;
+}
+
+@font-face {
+    font-family: Hanken Grotesk;
+    src: url(https://fonts.google.com/specimen/Hanken+Grotesk);
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 600px;
+    height: fit-content;
+    place-self: center;;
+    box-shadow: 10px 10px 30px #ccc9c9;
+    border-radius: 20px;
+}
+
+.leftResult {
+    text-align: center;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    color: white;
+    display: grid;
+    place-items: center;
+}
+
+.rightResult {
+    display: grid;
+    padding: 10px;
+    grid-template-rows: repeat(6);
+    row-gap: 2px;
+}
+
+#resultCircle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: grid;
+
+}
+
+#mainResult {
+    font-weight: 800;
+    font-size: 2em;
+
+}
+
+#pleasantry {
+    font-weight: 800;
+    font-size: 1em;
+}
+
+button {
+    border-radius: 20px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#summary {
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#reaction {
+    background-color: hsl(0, 100%, 67%, .1);
+    color: hsl(0, 100%, 67%);
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#memory {
+    background-color: hsl(39, 100%, 56%, .1);
+    color: hsl(39, 100%, 56%);
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+#memScore {
+    justify-self: right;
+    padding-right: 1em;
+    align-items: center;
+    color: black;
+    opacity: .5;
+}
+
+#verbal {
+    background-color: hsl(166, 100%, 37%, .1);
+    color: hsl(166, 100%, 37%);
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+#verbalTest {
+    padding-left: 2em;
+
+}
+
+#visual {
+    background-color: hsl(234, 85%, 45%, .1);
+    color: hsl(234, 85%, 45%);
+    height: 40px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+}
+
+#visualTest {
+    column-span: 1;
+    padding-left: 2em;
+    align-items: center;
+}
+
+#verbalScore {
+    justify-self: right;
+    padding-right: 1em;
+    align-items: center;
+    color: black;
+    opacity: .5;
+}
+
+#memoryTest {
+    column-span: 1;
+    padding-left: 2em;
+    align-items: center;}
+
+#memoryScore {
+    justify-self: right;
+    padding-right: 1em;
+    align-items: center;
+    color: black;
+    opacity: .5;
+}
+
+#visualScore {
+    justify-self: right;
+    padding-right: 1em;
+    align-items: center;
+    color: black;
+    opacity: .5;
+}
+
+#reactionTest {
+    column-span: 1;
+    padding-left: 2em;
+    align-items: center;
+}
+
+#reactScore {
+    justify-self: right;
+    padding-right: 1em;
+    align-items: center;
+    color: black;
+    opacity: .5;
+}
+
+#holyCrap {
+    grid-template-rows: auto;
+    display: grid;
+    padding: 20px;
+}
